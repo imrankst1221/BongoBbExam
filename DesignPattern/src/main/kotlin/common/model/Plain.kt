@@ -3,6 +3,8 @@ package common.model
 class Plain constructor( private val numberOfWheel: Int,
                          private val numberOfPassenger: Int,
                          private val hasGas: Boolean): Vehicle{
+
+
     override fun getNumberOfWheels(): Int {
         return numberOfWheel
     }
