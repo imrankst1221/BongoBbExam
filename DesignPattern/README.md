@@ -1,6 +1,6 @@
 ## Written test for Bongo’s Android Developer position.
 
-### Problem: 
+## Problem: 
 Explain the design pattern used in following: 
 
 ```
@@ -11,8 +11,12 @@ boolean has_gas()
 ```
 
 
- a) Explain how you can use the pattern to create car and plane class? 
- 
+  a) Explain how you can use the pattern to create car and plane class? 
+  b) Use a different design pattern for this solution.
+
+
+## Solution:
+
  ### Factory design Pattern
  
  ```
@@ -42,7 +46,6 @@ fun main(args: Array<String>) {
     }
  ```
  
- b) Use a different design pattern for this solution.
  
  ### Singleton design pattern
  
