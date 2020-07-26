@@ -18,23 +18,23 @@ Start
 	    if video time empty 
 		start from begunning 
 	    else 
-		start from memorized time
+	    	start from memorized time
 
 
 	Forward: 
 	  set new_time (memorizer time + forwad)
 		if new_time not beyond maximum limit
-			update video with new_time
+		    update video with new_time
 		else 
-			do nothing
+		    do nothing
 
 
 	Rewind: 
 	  set new_time (memorizer time - rewing)
-	if new_time is not negative
-	  update video with new_time
-	else 
-		do nothing
+		if new_time is not negative
+		     update video with new_time
+		else 
+		     do nothing
 
 End
 ```
