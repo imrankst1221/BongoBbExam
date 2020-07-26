@@ -7,7 +7,7 @@ Write a video player application with ‘Play’, ‘Forward’, ‘Rewind’ fu
 I choose the MVVM (Model-View-ViewModel) and Singleton design pattern with live data.
 
 ### Pseudocode for this program: 
-
+```
 Start: 
     initial video player in single instance
 
@@ -36,4 +36,4 @@ if new_time is not negative
 else 
 	do nothing
 
-
+```
