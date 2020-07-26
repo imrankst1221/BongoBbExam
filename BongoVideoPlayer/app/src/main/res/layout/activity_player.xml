@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".ui.PlayerActivity">
+
+    <VideoView
+        android:id="@+id/videoPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnPlayPause"
+        android:layout_width="@dimen/play_button_size"
+        android:layout_height="@dimen/play_button_size"
+        android:layout_marginStart="@dimen/margin_2"
+        android:layout_marginEnd="@dimen/margin_2"
+        android:layout_marginBottom="@dimen/margin_2"
+        android:background="@color/colorTransparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_play" />
+
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnForward"
+        android:layout_width="@dimen/forward_button_size"
+        android:layout_height="@dimen/forward_button_size"
+        android:layout_marginStart="@dimen/margin_2"
+        android:layout_marginBottom="@dimen/margin_3"
+        android:background="@color/colorTransparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/btnPlayPause"
+        app:srcCompat="@drawable/ic_forward" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnRewind"
+        android:layout_width="@dimen/forward_button_size"
+        android:layout_height="@dimen/forward_button_size"
+        android:layout_marginEnd="@dimen/margin_2"
+        android:layout_marginBottom="@dimen/margin_3"
+        android:background="@color/colorTransparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btnPlayPause"
+        app:srcCompat="@drawable/ic_rewind" />
+</androidx.constraintlayout.widget.ConstraintLayout>
